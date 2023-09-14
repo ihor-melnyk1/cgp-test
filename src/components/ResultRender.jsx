@@ -5,7 +5,7 @@ import { blocksSelector } from '../store/blocksSlice';
 const ResultRender = () => {
   const { blocks } = useSelector(blocksSelector);
   return (
-    <div className='flex-1 p-[30px] flex flex-col items-center gap-[30px] overflow-y-auto'>
+    <div className='md:flex-1 w-screen p-[30px] flex flex-col items-center gap-[30px] overflow-y-auto'>
       {blocks.map(({id, type, data}) => {
         if(data === null) return null;
         if(type === 'paragraph') {

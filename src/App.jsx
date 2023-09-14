@@ -13,7 +13,7 @@ function App() {
       >
         REACT EDITOR Test
       </header>
-      <main className='flex flex-auto overflow-y-auto'>
+      <main className='flex flex-auto overflow-y-auto flex-wrap md:flex-nowrap'>
         <WidjetsArea setDraggedWidgetType={setDraggedWidgetType}/>
         <WorkingGrid draggedWidgetType={draggedWidgetType}/>
         <ResultRender />

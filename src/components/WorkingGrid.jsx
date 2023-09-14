@@ -9,7 +9,7 @@ const WorkingGrid = ({ draggedWidgetType }) => {
   const dispatch = useDispatch();
   return (
     <div 
-      className={`bg-gray-100 w-[538px] flex flex-col gap-[15px] overflow-y-auto border-4 border-dashed p-[26px] ${draggedWidgetType ? 'border-blue' : 'border-gray-100'}`}
+      className={`bg-gray-100 w-auto flex-1 md:flex-none md:w-[300px] xl:w-[538px] flex flex-col gap-[15px] overflow-y-auto border-4 border-dashed p-[26px] ${draggedWidgetType ? 'border-blue' : 'border-gray-100'}`}
       onDragOver={(e) => e.preventDefault()}
       onDrop={() => dispatch(addBlock(draggedWidgetType))}
     >
